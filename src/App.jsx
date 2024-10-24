@@ -1,7 +1,7 @@
 import { useState , useEffect} from "react"
 import { Header } from "./components/Header"
 import { Tabs } from "./components/Tabs"
-import { TodoInput } from "./components/Todoinput"
+import { Todoinput } from "./components/Todoinput"
 import { TodoList } from "./components/TodoList"
 
 
@@ -72,7 +72,7 @@ function App() {
        <Header todos={todos}/>
        <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab}  todos={todos} />
        <TodoList handleCompleteTodo= {handleCompleteTodo} handleDeleteTodo={handleDeleteTodo} selectedTab={selectedTab} todos={todos} />
-       <TodoInput handleAddTodo={handleAddTodo}/>
+       <Todoinput handleAddTodo={handleAddTodo}/>
     </>
   )
 }

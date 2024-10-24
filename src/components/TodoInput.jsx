@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function TodoInput(props){
+export function Todoinput(props){
 
     const {handleAddTodo} = props
     const [inputVal , setInputVal] = useState('')
