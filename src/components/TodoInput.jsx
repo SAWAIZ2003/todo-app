@@ -5,6 +5,7 @@ export function Todoinput(props){
     const {handleAddTodo} = props
     const [inputVal , setInputVal] = useState('')
     console.log(inputVal)
+    
 
     return(
         <div className="input-container">
